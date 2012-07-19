@@ -1,0 +1,9 @@
+.DS_Store
+*.idx
+*.class
+Thumbs.db
+*.aux
+*.log
+*.swp
+*~
+*.ldb

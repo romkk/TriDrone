@@ -1,0 +1,39 @@
+<project name="TriDrone" default="run" basedir=".">
+
+  <property name="build.dir" value="bin" />
+  <property name="lib.dir"   value="lib" />
+  <property name="src.dir"   value="src" />
+  <property name="junit.dir" value="${basedir}/${lib.dir}/junit-4.10.jar" />
+
+  <target name="clean">
+    <delete dir="${build.dir}" />
+  </target>
+
+  <target name="makedir" depends="clean">
+    <mkdir dir="${build.dir}" />
+  </target>
+
+  <target name="compile" depends="makedir">
+    <javac includeantruntime="true" srcdir="${src.dir}" destdir="${build.dir}" classpath="${junit.dir}" />
+  </target>
+
+  <target name="junit" depends="compile">
+    <junit printsummary="no" showoutput="no" haltonfailure="yes">
+      <classpath>
+        <pathelement location="${build.dir}" />
+        <pathelement location="${junit.dir}" />
+      </classpath>
+      <formatter type="plain" usefile="false" />
+      <batchtest>
+        <fileset dir="${build.dir}">
+          <include name="**/*Test*.class" />
+        </fileset>
+      </batchtest> 
+    </junit>
+  </target>
+
+  <target name="run" depends="junit">
+    <java fork="true" classname="de.tridrone.TriDrone" classpath="${build.dir}" />
+  </target>
+
+</project>
