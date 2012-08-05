@@ -1,0 +1,16 @@
+rem @ECHO OFF
+set this=%CD%
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m1" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor1.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m2" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor2.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m3" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor3.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m4" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor4.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m5" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor5.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m6" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor6.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m7" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor7.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m8" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor8.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m9" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor9.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m10" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor10.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m11" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor11.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+"C:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -I "%this%\m12" -S "%this%\labels.tmp" -fI -W+ie -o "%this%\bl-17a-motor12.hex" -d "%this%\bl-17a.obj" -e "%this%\bl-17a.eep" -m "%this%\bl-17a.map" -l "%this%\bl-17a.lst" "%this%\bl-17a.asm"
+
+pause

@@ -1,0 +1,29 @@
+Mag8 - TowerPro 18A and 25A
+-----------------------------------------------------
+
+Serial Software "inverted" by Quax aka Bernhard Konze
+modified by ufo-hans aka Hans Haider
+
+-----------------------------------------------------
+
+Serial connection (RX): Pin 30
+Serial rate: 115kBaud
+
+-----------------------------------------------------
+
+Needed changes to the ESC:
+
+rewire Pin 30 -> Pin 23 (PD0 -> PC0)
+
+-----------------------------------------------------
+
+Command is:
+
+0xF5 M1 M2 M3 M4 0xF5 M1 M2 M3 M4 ...
+
+M1 = 0..200
+
+-----------------------------------------------------
+
+Have fun!
+
